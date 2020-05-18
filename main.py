@@ -5,7 +5,9 @@ import decimal
 w3 = Web3(Web3.HTTPProvider("https://rpc.ether1.cloud"))
 
 # Replace the address below with your own
-balance = w3.eth.getBalance('0xefa3DbfDD4d9a14B9F0dc3F6c06582C7eAfe3066')
+address = Web3.toChecksumAddress('0xfbd45d6ed333c4ae16d379ca470690e3f8d0d2a2')
+
+balance = w3.eth.getBalance(address)
 
 balance_formatted = w3.fromWei(balance, 'ether')
 

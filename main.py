@@ -27,4 +27,4 @@ print("Value of 1 ETHO in USD: $" + str(data["USD"]))
 print("Current Value of your Ether-1 Wallet in USD: $" +
       str(format(wallet_value, '.2f')))
 print("You can currently afford " + str(format(pizza_count, '.2f')) +
-      " pizzas")
+      " pizzas from Little Ceasars")
